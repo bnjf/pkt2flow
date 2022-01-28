@@ -21,8 +21,8 @@ requirement). I have not found a simple tool to classify the packets into flows 
 further processing. This is why this program is born.
 
 The inner function of this program behaves using the 4-tuple (src_ip, dst_ip, src_port, dst_port)
-to seperate the packets into TCP or UDP flows. Each flow will be saved into a pcap 
-file named with 4-tuple and the timestamp of the first packet of the flow. The packets are 
+to separate the packets into TCP or UDP flows. Each flow will be saved into a pcap
+file named with 4-tuple and the timestamp of the first packet of the flow. The packets are
 saved in the order as read from the source. Any further processing like TCP resembling is
 not performed. The flow timeout is considered as 30 minutes which can be changed in pkt2flow.h.
 
